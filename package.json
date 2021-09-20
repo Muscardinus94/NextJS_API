@@ -7,10 +7,33 @@
     "build": "next build",
     "start": "next start"
   },
+  "eslintConfig": {
+    "extends": [
+      "prettier"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+      "react/prefer-stateless-function": 0,
+      "react/jsx-filename-extension": 0,
+      "react/jsx-one-expression-per-line": 0,
+      "react/prop-types": 0
+    },
+    "env": {
+      "browser": true
+    }
+  },
   "dependencies": {
+    "eslint": "^7.32.0",
+    "mongodb": "^4.1.2",
     "next": "10.0.6",
+    "prettier": "^2.4.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "swr": "^0.4.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0"
   }
 }
